@@ -13,7 +13,7 @@ const RoadMap = () => {
         <VerticalTimeline lineColor="white">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'transparent', color: '#fff', textAlign: "right" }}
+            contentStyle={{ background: 'transparent', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  transparent' }}
             icon={<img src={KGImage} style={{ width: '50px' }} />}
             iconStyle={{ background: '#0a0a0a', color: '#fff' }}
@@ -28,7 +28,7 @@ const RoadMap = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'transparent', color: '#fff', textAlign: "left" }}
+            contentStyle={{ background: 'transparent', color: '#fff'}}
             contentArrowStyle={{ borderRight: '7px solid  transparent' }}
             icon={<img src={KGImage} style={{ width: '50px' }} />}
             iconStyle={{ background: '#0a0a0a', color: '#fff' }}
@@ -43,7 +43,7 @@ const RoadMap = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'transparent', color: '#fff', textAlign: "right" }}
+            contentStyle={{ background: 'transparent', color: '#fff'}}
             contentArrowStyle={{ borderRight: '7px solid  transparent' }}
             icon={<img src={KGImage} style={{ width: '50px' }} />}
             iconStyle={{ background: '#0a0a0a', color: '#fff' }}
@@ -58,7 +58,7 @@ const RoadMap = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'transparent', color: '#fff', textAlign: "left" }}
+            contentStyle={{ background: 'transparent', color: '#fff'}}
             contentArrowStyle={{ borderRight: '7px solid  transparent' }}
             icon={<img src={KGImage} style={{ width: '50px' }} />}
             iconStyle={{ background: '#0a0a0a', color: '#fff' }}
@@ -72,7 +72,7 @@ const RoadMap = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'transparent', color: '#fff', textAlign: "right" }}
+            contentStyle={{ background: 'transparent', color: '#fff'}}
             contentArrowStyle={{ borderRight: '7px solid  transparent' }}
             icon={<img src={KGImage} style={{ width: '50px' }} />}
             iconStyle={{ background: '#0a0a0a', color: '#fff' }}
@@ -86,7 +86,7 @@ const RoadMap = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'transparent', color: '#fff', textAlign: "left" }}
+            contentStyle={{ background: 'transparent', color: '#fff'}}
             contentArrowStyle={{ borderRight: '7px solid  transparent' }}
             icon={<img src={KGImage} style={{ width: '50px' }} />}
             iconStyle={{ background: '#0a0a0a', color: '#fff' }}
@@ -100,7 +100,7 @@ const RoadMap = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'transparent', color: '#fff', textAlign: "right" }}
+            contentStyle={{ background: 'transparent', color: '#fff'}}
             contentArrowStyle={{ borderRight: '7px solid  transparent' }}
             icon={<img src={KGImage} style={{ width: '50px' }} />}
             iconStyle={{ background: '#0a0a0a', color: '#fff' }}

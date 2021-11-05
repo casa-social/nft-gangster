@@ -16,12 +16,19 @@ const PurchaseStyle = Styled.div`
                 font-size: 7em;
                 line-height: 1;
                 font-weight: bold;
+                @media(max-width: 768px) {
+                    text-align: center;
+                    font-size: 5em
+                }
             }
             h2 {
                 color: #dd2b37;
                 font-size: 3em;  
                 font-weight: bold;
-                
+                @media(max-width: 768px) {
+                    text-align: center;
+                    font-size: 2em
+                }
             }
         }
     }
@@ -72,7 +79,8 @@ const PurchaseStyle = Styled.div`
                 line-height: 1;
                 @media(max-width: 991px) {
                     margin-left: 0;
-                    font-size: 4em;
+                    font-size: 2.5em;
+                    text-align: center;
                 }
             }
         }
@@ -194,7 +202,8 @@ const GangstersStyle = Styled.div`
             font-family: 'Akira', sans-serif;
             font-size: 3em;
             @media(max-width: 991px) {
-                font-size: 2.5em;
+                font-size: 1.5em;
+                text-align: center;
             }
         } 
         .row {
@@ -223,14 +232,25 @@ section {
         background-repeat: repeat-y;
         font-family: 'Akira', sans-serif;
         font-size: 2.5em;
+        @media(max-width: 768px) {
+            font-size: 2em;
+            text-align: center;
+        }
     } 
     .row {
         margin-top: 30px;
         img {
             margin-top: 100px;
+            width: 80%;
         }
         h3 {
             word-break: break-all;
+        }
+        a {
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            color: white;
         }
     }
 }
@@ -252,6 +272,25 @@ const RoadMapStyle = Styled.div`
             font-size: 2.5em;
         }
     }
+    // .vertical-timeline {
+    //     .vertical-timeline-element {
+    //         &:nth-child(odd) {
+    //             .vertical-timeline-element-content {
+    //                 text-align: right;
+    //             }
+    //         }
+    //         &:nth-child(even) {
+    //             .vertical-timeline-element-content {
+    //                 text-align: right;
+    //             }
+    //         }
+    //         @media(max-width: 991px) {
+    //             .vertical-timeline-element-content {
+    //                 text-align: left;
+    //             }
+    //         }
+    //     }
+    // }
 `
 
 export {

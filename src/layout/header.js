@@ -84,19 +84,22 @@ const Header = () => {
             <Collapse isOpen={isOpen} navbar>
               <Nav className="mr-auto" navbar className="link">
                 <NavItem>
-                  <a className="nav-link" >NFT</a>
+                  <a className="nav-link" href="#nft" >NFT</a>
                 </NavItem>
                 <NavItem>
-                  <a className="nav-link" >KILOCOIN</a>
+                  <a className="nav-link" href="#kilocoin" >KILOCOIN</a>
                 </NavItem>
                 <NavItem>
                   <a className="nav-link">WHITEPAPER</a>
                 </NavItem>
                 <NavItem>
-                  <a className="nav-link">DISCORD</a>
+                  <a className="nav-link" href="https://discord.com/invite/kryptogangsters">DISCORD</a>
                 </NavItem>
                 <NavItem>
-                  <a className="nav-link">TELEGRAM</a>
+                  <a className="nav-link" href="https://t.me/KryptoGangsters">TELEGRAM</a>
+                </NavItem>
+                <NavItem>
+                  <a className="nav-link" href="https://twitter.com/kryptogangsters">TWITTER</a>
                 </NavItem>
                 <NavItem>
                   <Button onClick={connectWallet}>

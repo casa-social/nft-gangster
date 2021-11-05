@@ -71,25 +71,25 @@ const Introduction = () => {
             <Col md={6} className="left-panel">
               <ul>
                 <li>
-                  <a href="/">
+                  <a href="https://www.instagram.com/kryptogangsters/">
                     <span className="text-red">Instagram</span>
                     <FaInstagram icon={faWallet} className="text-white"/>
                   </a>
                 </li>
                 <li>
-                  <a>
+                  <a href="https://twitter.com/kryptogangsters">
                     <span className="text-red">Twitter</span>
                     <FaTwitter icon={faWallet} className="text-white"/>
                   </a>
                 </li>
                 <li>
-                  <a>
+                  <a href="https://discord.com/invite/kryptogangsters">
                     <span className="text-red">Discord</span>
                     <FaDiscord icon={faWallet} className="text-white"/>
                   </a>
                 </li>
                 <li>
-                  <a>
+                  <a href="https://t.me/KryptoGangsters">
                     <span className="text-red">Telegram</span>
                     <FaTelegram icon={faWallet} className="text-white"/>
                   </a>
@@ -119,12 +119,12 @@ const Introduction = () => {
                     <Input type="number" onChange={(e) => setAmount(e.target.value)}/>
                   </Col>
                 </Row>
-                <Button className="purchase-btn" onClick={purchase}>connect wallet</Button>
+                <Button className="purchase-btn" onClick={purchase}>Purchase NFT</Button>
               </div>
             </Col>
           </Row>
         </Container>
-        <Row className="description">
+        <Row className="description"id="nft">
           <h1 className="title text-white"><img src={Revolver} />NFT</h1>
           <Col md={8}>
             <h3 className="text-white">

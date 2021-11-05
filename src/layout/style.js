@@ -29,7 +29,6 @@ const HeaderStyle = Styled.div`
         align-items: center;
         a.nav-link {
             padding: 20px 10px;
-            font-family: Grifter, sans-serif;
             color: #eeedf2;
             font-weight: 700;
             letter-spacing: 0.1em;
@@ -38,6 +37,9 @@ const HeaderStyle = Styled.div`
             color: white;
             cursor: pointer;
             font-size: 12px;
+            &:hover {
+                color: white;
+            }
         }
         button {
             background: transparent;

@@ -10,13 +10,13 @@ const Kilocoin = () => {
   return (
     <>
       <KilocoinStyle>
-        <section style={{ backgroundImage: `linear-gradient(180deg, rgba(9, 18, 44, 0.89), rgba(9, 18, 44, 0.89)), url(${BlackBrike})` }}>
+        <section style={{ backgroundImage: `linear-gradient(180deg, rgba(9, 18, 44, 0.89), rgba(9, 18, 44, 0.89)), url(${BlackBrike})` }} id="kilocoin">
           <h1 className="title text-white">
             <img src={SMG} />
             KILO COIN
           </h1>
           <Row>
-            <Col md={5}>
+            <Col md={5} className="text-center">
               <img src={KGCoin} />
             </Col>
             <Col md={7}>
@@ -30,9 +30,9 @@ const Kilocoin = () => {
               <h3 className="text-white">Smart chain BEP20 Token</h3>
               <h3 className="text-white">Total Supply <span className="text-red">250,000,000 pre-minted</span></h3>
               <div className="text-center">
-                <Button className="default-btn">
+                <a className="default-btn" href="https://t.me/KryptoGangsters" target="_blank">
                   JOIN THE PRIVATE SALE
-                </Button>
+                </a>
               </div>
             </Col>
           </Row>
