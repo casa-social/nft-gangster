@@ -26,10 +26,10 @@ import KGPDF from '../assets/documents/KG-WP.pdf';
 
 const Header = () => {
   const dispatch = useDispatch();
-  const {userAddress} = useSelector((state) => {
+  const {userAddress, web3} = useSelector((state) => {
     return {
       userAddress: state.userAddress,
-
+      web3: state.web3
     }
   })
   
@@ -67,9 +67,13 @@ const Header = () => {
     setShowAddress(accounts[0].substr(0, 4) + "..." + accounts[0].substr(accounts[0].length - 3, accounts[0].length));
   }
 
-  useEffect(() => {
+  useEffect(async () => {
     if (userAddress !== '') {
       setShowAddress(userAddress.substr(0, 4) + "..." + userAddress.substr(userAddress.length - 3))
+      const chainId = await web3.eth.getChainId();
+      if (chainId !== CHAIN_ID) {
+        toast.warning("Please switch to ETH network");
+      }
     }
   }, [userAddress]);
 

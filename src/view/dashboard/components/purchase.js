@@ -6,6 +6,7 @@ import { FaTwitter, FaTelegram, FaInstagram, FaDiscord } from "react-icons/fa";
 import { faWallet } from '@fortawesome/free-solid-svg-icons'
 import {toast} from 'react-toastify';
 import { ContractAddr, ContractAbi } from '../../../constants/contract';
+import { CHAIN_ID } from '../../../constants/constants';
 
 import { PurchaseStyle } from '../../../style';
 import BlackBrike from '../../../assets/images/black-brike.jpg';
@@ -19,7 +20,8 @@ const Introduction = () => {
   const dispatch = useDispatch();
   const userAddress = useSelector(state => state.userAddress);
   const web3 = useSelector(state => state.web3);
-  const [amount, setAmount] = useState(0)
+  const [amount, setAmount] = useState(0);
+  const [remainAmount, setRemainAmount] = useState(10000);
 
   const purchase = async () => {
     let gas = 178000;
@@ -31,6 +33,10 @@ const Introduction = () => {
       toast.warning(`please input amount.`);
       return;
     }
+    const chainId = await web3.eth.getChainId();
+    if (chainId !== CHAIN_ID) {
+      return toast.warning("Please switch to ETH network");
+    }
     const contract = new web3.eth.Contract(
       ContractAbi,
       ContractAddr
@@ -41,11 +47,30 @@ const Introduction = () => {
     if (isWhiteListed) {
       value = amount * 0.08;
     } else {
-      value = amount * 0.1;
+      value = amount * 0.08;
     }
     const buyStatus = await contract.methods.createItem(amount).send({from: userAddress, value: Web3.utils.toWei((value).toString(), 'ether'), gas: gas});
     console.log(buyStatus);
   }
+
+  useEffect(async () => {
+    if (userAddress === '') {
+      return;
+    }
+    if (web3 !== {}) {
+      const chainId = await web3.eth.getChainId();
+      if (chainId !== CHAIN_ID) {
+        toast.warning("Please switch to ETH network");
+      }
+
+      const contract = new web3.eth.Contract(
+        ContractAbi,
+        ContractAddr
+      );
+      const countNFTs = await contract.methods._tokenIDs().call();
+      setRemainAmount(10000 - countNFTs * 1);
+    }
+  }, [userAddress])
 
   return (
     <>
@@ -120,7 +145,7 @@ const Introduction = () => {
                   <Col xs={7} className="text-right right-panel">
                     <h4 className="text-white">Price Per Gangster</h4>
                     <h4 className="text-white">0.08 ETH EACH</h4>
-                    <h4 className="text-white">10200 remaining</h4>
+                    <h4 className="text-white">{remainAmount} remaining</h4>
                     <Input type="number" value={amount} onChange={(e) => setAmount(e.target.value)}/>
                   </Col>
                 </Row>
