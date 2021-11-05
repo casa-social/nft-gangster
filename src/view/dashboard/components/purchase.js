@@ -75,25 +75,25 @@ const Introduction = () => {
             <Col md={6} className="left-panel">
               <ul>
                 <li>
-                  <a href="https://www.instagram.com/kryptogangsters/">
+                  <a href="https://www.instagram.com/kryptogangsters/" target="_blink">
                     <span className="text-red">Instagram</span>
                     <FaInstagram icon={faWallet} className="text-white"/>
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/kryptogangsters">
+                  <a href="https://twitter.com/kryptogangsters" target="_blink">
                     <span className="text-red">Twitter</span>
                     <FaTwitter icon={faWallet} className="text-white"/>
                   </a>
                 </li>
                 <li>
-                  <a href="https://discord.com/invite/kryptogangsters">
+                  <a href="https://discord.com/invite/kryptogangsters" target="_blink">
                     <span className="text-red">Discord</span>
                     <FaDiscord icon={faWallet} className="text-white"/>
                   </a>
                 </li>
                 <li>
-                  <a href="https://t.me/KryptoGangsters">
+                  <a href="https://t.me/KryptoGangsters" target="_blink">
                     <span className="text-red">Telegram</span>
                     <FaTelegram icon={faWallet} className="text-white"/>
                   </a>

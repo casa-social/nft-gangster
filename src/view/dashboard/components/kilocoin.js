@@ -30,7 +30,7 @@ const Kilocoin = () => {
               <h3 className="text-white">Smart chain BEP20 Token</h3>
               <h3 className="text-white">Total Supply <span className="text-red">250,000,000 pre-minted</span></h3>
               <div className="text-center">
-                <a className="default-btn" href="https://t.me/KryptoGangsters" target="_blank">
+                <a className="default-btn" href="https://t.me/KryptoGangsters" target="_blink">
                   JOIN THE PRIVATE SALE
                 </a>
               </div>

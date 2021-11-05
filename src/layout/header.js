@@ -22,6 +22,7 @@ import { HeaderStyle } from './style';
 import LogoImage from '../assets/images/logo-white.png';
 import VideoImage from "../assets/videos/video-bg.jpg";
 import Video1 from "../assets/videos/video1.mp4";
+import KGPDF from '../assets/documents/KG-WP.pdf';
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -90,16 +91,16 @@ const Header = () => {
                   <a className="nav-link" href="#kilocoin" >KILOCOIN</a>
                 </NavItem>
                 <NavItem>
-                  <a className="nav-link">WHITEPAPER</a>
+                  <a className="nav-link" target="_blink" href={KGPDF}>WHITEPAPER</a>
                 </NavItem>
                 <NavItem>
-                  <a className="nav-link" href="https://discord.com/invite/kryptogangsters">DISCORD</a>
+                  <a className="nav-link" target="_blink" href="https://discord.com/invite/kryptogangsters">DISCORD</a>
                 </NavItem>
                 <NavItem>
-                  <a className="nav-link" href="https://t.me/KryptoGangsters">TELEGRAM</a>
+                  <a className="nav-link" target="_blink" href="https://t.me/KryptoGangsters">TELEGRAM</a>
                 </NavItem>
                 <NavItem>
-                  <a className="nav-link" href="https://twitter.com/kryptogangsters">TWITTER</a>
+                  <a className="nav-link" target="_blink" href="https://twitter.com/kryptogangsters">TWITTER</a>
                 </NavItem>
                 <NavItem>
                   <Button onClick={connectWallet}>
