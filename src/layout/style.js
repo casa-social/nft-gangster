@@ -183,6 +183,8 @@ const FooterStyle = Styled.div`
                     a {
                         font-size: 15px;
                         cursor: pointer;
+                        color: white;
+                        text-decoration: none;
                         &:hover {
                             text-decoration: underline;
                         }

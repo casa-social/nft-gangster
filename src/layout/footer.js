@@ -19,19 +19,19 @@ const Footer = () => {
               <h4>Quick links</h4>
               <ul>
                 <li>
-                  <a>Discord</a>
+                  <a href="https://discord.com/invite/kryptogangsters" target="_blink">Discord</a>
                 </li>
                 <li>
-                  <a>Instagram</a>
+                  <a href="https://www.instagram.com/kryptogangsters/" target="_blink">Instagram</a>
                 </li>
                 <li>
-                  <a>telegram</a>
+                  <a href="https://t.me/KryptoGangsters" target="_blink">telegram</a>
                 </li>
                 <li>
-                  <a>Twitter</a>
+                  <a href="https://twitter.com/kryptogangsters" target="_blink">Twitter</a>
                 </li>
                 <li>
-                  <a>Opensea</a>
+                  <a href="https://opensea.io/collection/krypto-gangsters" target="_blink">Opensea</a>
                 </li>
               </ul>
             </Col>
@@ -39,13 +39,13 @@ const Footer = () => {
               <h4>Jump to</h4>
               <ul>
                 <li>
-                  <a>NFT</a>
+                  <a href="#nft">NFT</a>
                 </li>
                 <li>
-                  <a>Kilo Coin</a>
+                  <a href="#kilocoin">Kilo Coin</a>
                 </li>
                 <li>
-                  <a>Roadmap</a>
+                  <a href="#roadmap">Roadmap</a>
                 </li>
               </ul>
             </Col>
