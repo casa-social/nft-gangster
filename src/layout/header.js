@@ -66,10 +66,6 @@ const Header = () => {
     setShowAddress(accounts[0].substr(0, 4) + "..." + accounts[0].substr(accounts[0].length - 3, accounts[0].length));
   }
 
-  useEffect(async () => {
-    console.log(userAddress)
-  }, []);
-
   useEffect(() => {
     if (userAddress !== '') {
       setShowAddress(userAddress.substr(0, 4) + "..." + userAddress.substr(userAddress.length - 3))

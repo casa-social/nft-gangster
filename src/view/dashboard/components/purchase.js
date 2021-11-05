@@ -5,6 +5,7 @@ import Web3 from 'web3';
 import { FaTwitter, FaTelegram, FaInstagram, FaDiscord } from "react-icons/fa";
 import { faWallet } from '@fortawesome/free-solid-svg-icons'
 import {toast} from 'react-toastify';
+import { ContractAddr, ContractAbi } from '../../../constants/contract';
 
 import { PurchaseStyle } from '../../../style';
 import BlackBrike from '../../../assets/images/black-brike.jpg';
@@ -14,17 +15,32 @@ import MintAvatar from '../../../assets/images/mint-avatar.png';
 import Revolver from '../../../assets/images/Revolver.png';
 import Mask from '../../../assets/images/mask.png';
 
-const {ethereum} = window;
-let web3 = new Web3(ethereum);
-
 const Introduction = () => {
   const dispatch = useDispatch();
   const userAddress = useSelector(state => state.userAddress);
-  const purchase = () => {
-    console.log(userAddress)
+  const web3 = useSelector(state => state.web3);
+  const [amount, setAmount] = useState(0)
+
+  const purchase = async () => {
+    let gas = 178000;
     if (userAddress === '') {
       toast.warning(`please connect wallet.`);
+      return;
     }
+    const contract = new web3.eth.Contract(
+      ContractAbi,
+      ContractAddr
+    );
+    var isWhiteListed = await contract.methods.isWhiteListed(userAddress).call();
+    gas = gas + (amount - 1) * 50000;
+    let value = 0;
+    if (isWhiteListed) {
+      value = amount * 0.08;
+    } else {
+      value = amount * 0.1;
+    }
+    const buyStatus = await contract.methods.createItem(amount).send({from: userAddress, value: Web3.utils.toWei((value).toString(), 'ether'), gas: gas});
+    console.log(buyStatus);
   }
 
   return (
@@ -100,7 +116,7 @@ const Introduction = () => {
                     <h4 className="text-white">Price Per Gangster</h4>
                     <h4 className="text-white">0.08 ETH EACH</h4>
                     <h4 className="text-white">10200 remaining</h4>
-                    <Input type="number" />
+                    <Input type="number" onChange={(e) => setAmount(e.target.value)}/>
                   </Col>
                 </Row>
                 <Button className="purchase-btn" onClick={purchase}>connect wallet</Button>
