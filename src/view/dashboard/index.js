@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 
 
 import Purchase from './components/purchase';
+import Gangsters from './components/gangsters';
+import Kilocoin from './components/kilocoin';
 
 
 const Dashboard = () => {
@@ -15,6 +17,8 @@ const Dashboard = () => {
   return (
     <div className='main-content' >
       <Purchase />
+      <Gangsters />
+      <Kilocoin/>
     </div>
   );
 }

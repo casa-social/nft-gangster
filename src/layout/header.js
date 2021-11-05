@@ -2,73 +2,72 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import Web3 from 'web3';
+import Web3Modal from "web3modal";
+import WalletConnectProvider from "@walletconnect/web3-provider";
 import {
   Navbar,
-  NavbarBrand,
-  Spinner,
   Container,
   Button,
-  NavbarToggler,
   Collapse,
   NavItem,
   Nav,
-  Row
 } from 'reactstrap';
 import { toast } from 'react-toastify';
 import { CHAIN_ID } from '../constants/constants';
 import { getUserBusdBalance } from '../interface/web3Interface';
 
-import { FaTwitter, FaTelegram } from "react-icons/fa";
+import { FaTwitter, FaTelegram, FaList } from "react-icons/fa";
 import { faWallet } from '@fortawesome/free-solid-svg-icons'
 import { HeaderStyle } from './style';
 import LogoImage from '../assets/images/logo-white.png';
 import VideoImage from "../assets/videos/video-bg.jpg";
 import Video1 from "../assets/videos/video1.mp4";
-import Video2 from "../assets/videos/video2.webm";
-
-const {ethereum} = window;
-const web3 = new Web3(ethereum);
 
 const Header = () => {
   const dispatch = useDispatch();
   const {userAddress} = useSelector((state) => {
     return {
-      userAddress: state.userAddress
+      userAddress: state.userAddress,
+
     }
   })
-  const [isOpen, setIsOpen] = useState(false);
-  const [showAddress, setShowAddress] = useState("connect");
-  const [processingConnect, setProcessingConnect] = useState(false);
   
+  const [isOpen, setIsOpen] = useState(false);
+  const [showAddress, setShowAddress] = useState("Connect Wallet");
   const toggle = () => setIsOpen(!isOpen);
+
   const connectWallet = async () => { 
-    setProcessingConnect(true)
-    
-    ethereum.request({method: 'eth_requestAccounts'})
-    .then(async result => {
-      const defaultAccounts = await web3.eth.getAccounts();
-      const userBusdBalance = await getUserBusdBalance(defaultAccounts[0]);
-      dispatch({ type: "set", userAddress: defaultAccounts[0] });
-      dispatch({ type: "set", userBusdBalance: userBusdBalance });
-      setProcessingConnect(false)
-    })
-    .catch((err) => {
-      setProcessingConnect(false);
-      return;
+    const providerOptions = {
+      walletconnect: {
+        package: WalletConnectProvider,
+        options: {
+          rpc: {
+            1: 'https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161'
+          },
+          chainId: 1
+        }
+      }
+    };
+    const web3Modal = new Web3Modal({
+      network: "mainnet", // optional
+      cacheProvider: true, // optional
+      providerOptions // required
     });
+    
+    const provider = await web3Modal.connect();
+    dispatch({ type: "set", provider: provider });
+    const web3 = new Web3(provider);
+    dispatch({ type: "set", web3: web3 });
+    await web3Modal.toggleModal();
+    
+    const newWeb3 = new Web3(provider);
+    const accounts = await newWeb3.eth.getAccounts();
+    dispatch({ type: "set", userAddress: accounts[0] });
+    setShowAddress(accounts[0].substr(0, 4) + "..." + accounts[0].substr(accounts[0].length - 3, accounts[0].length));
   }
 
   useEffect(async () => {
-    const chainId = await web3.eth.getChainId();
-    if (chainId !== CHAIN_ID) {
-      toast.warning("please check the network!. this is working on only BSC network.");
-    }
-    const defaultAccounts = await web3.eth.getAccounts();
-    if (defaultAccounts.length > 0) {
-      const userBusdBalance = await getUserBusdBalance(defaultAccounts[0]);
-      dispatch({ type: "set", userBusdBalance: userBusdBalance });
-      dispatch({ type: "set", userAddress:defaultAccounts[0] });
-    }
+    console.log(userAddress)
   }, []);
 
   useEffect(() => {
@@ -85,7 +84,7 @@ const Header = () => {
             <NavLink to="/" className="logo"><img src={LogoImage} /></NavLink> 
           </Navbar>
           <Navbar light expand="md">
-            <NavbarToggler onClick={toggle} className="text-white"/>
+            <FaList onClick={toggle} icon="faWallet" className="text-white toggler"/>
             <Collapse isOpen={isOpen} navbar>
               <Nav className="mr-auto" navbar className="link">
                 <NavItem>
@@ -104,7 +103,9 @@ const Header = () => {
                   <a className="nav-link">TELEGRAM</a>
                 </NavItem>
                 <NavItem>
-                  <Button className="nav-link" onClick={connectWallet}>Connect Wallet</Button>
+                  <Button onClick={connectWallet}>
+                      {showAddress}
+                  </Button>
                 </NavItem>
               </Nav>
             </Collapse>

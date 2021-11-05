@@ -64,6 +64,19 @@ const StyleWrapper = Styled.div`
   img {
     width: 100%;
   }
+  .default-btn {
+    padding: 10px 20px;
+    margin: 10px auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #ff3154;
+    box-shadow: 1px 1px 4px -1px #000;
+    font-family: 'Akira expanded demo', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+  }
 `;
 
 const Dashboard = () => {

@@ -4,6 +4,7 @@ import { Container, Row, Col, Input, Button } from "reactstrap";
 import Web3 from 'web3';
 import { FaTwitter, FaTelegram, FaInstagram, FaDiscord } from "react-icons/fa";
 import { faWallet } from '@fortawesome/free-solid-svg-icons'
+import {toast} from 'react-toastify';
 
 import { PurchaseStyle } from '../../../style';
 import BlackBrike from '../../../assets/images/black-brike.jpg';
@@ -11,6 +12,7 @@ import RedLogo from '../../../assets/images/logo-red.png';
 import KGImage from '../../../assets/images/KG.svg';
 import MintAvatar from '../../../assets/images/mint-avatar.png';
 import Revolver from '../../../assets/images/Revolver.png';
+import Mask from '../../../assets/images/mask.png';
 
 const {ethereum} = window;
 let web3 = new Web3(ethereum);
@@ -21,14 +23,7 @@ const Introduction = () => {
   const purchase = () => {
     console.log(userAddress)
     if (userAddress === '') {
-      ethereum.request({method: 'eth_requestAccounts'})
-      .then(async result => {
-        const defaultAccounts = await web3.eth.getAccounts();
-        dispatch({ type: "set", userAddress: defaultAccounts[0] });
-      })
-      .catch((err) => {
-        return;
-      });
+      toast.warning(`please connect wallet.`);
     }
   }
 
@@ -112,10 +107,20 @@ const Introduction = () => {
               </div>
             </Col>
           </Row>
-          {/* <Row className="description">
-            <h1 className="title text-white"><img src={Revolver} />NFT</h1>
-          </Row> */}
         </Container>
+        <Row className="description">
+          <h1 className="title text-white"><img src={Revolver} />NFT</h1>
+          <Col md={8}>
+            <h3 className="text-white">
+            We will launch 2 sets of collectible NFTs. One set are “cryptonised” versions of real world and fictional characters that in one way or another are known to be “gangsters”. Every NFT will be unique and only one per NFT will be available. The characters are designed by our team and all have unique attributes attached to them.<br/><br/>
+
+            The second set of collectibles will be minted in one 10,000 NFT strong set of collectibles. These NFTs will be minted using an artificial intelligence process that will use and combine a set of attributes designed by our team.
+            </h3>
+          </Col>
+          <Col md={4}>
+            <img src={Mask} />
+          </Col>
+        </Row>
       </PurchaseStyle>
     </section>
   </>      

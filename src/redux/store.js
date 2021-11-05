@@ -4,6 +4,8 @@ const initialState = {
   currentChainID: 0,
   userAddress: '',
   userBusdBalance: '',
+  provider: {},
+  web3: {}
 }
 
 const changeState = (state = initialState, { type, ...rest }) => {

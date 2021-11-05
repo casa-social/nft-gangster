@@ -25,6 +25,8 @@ const HeaderStyle = Styled.div`
         }
     }
     .link {
+        display: flex;
+        align-items: center;
         a.nav-link {
             padding: 20px 10px;
             font-family: Grifter, sans-serif;
@@ -37,6 +39,21 @@ const HeaderStyle = Styled.div`
             cursor: pointer;
             font-size: 12px;
         }
+        button {
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 10px 15px;
+            color: white;
+        }
+    }
+    .toggler {
+        font-size: 22px;
+        margin-right: 20px;
+        display: none;
+        @media(max-width: 991px) {
+            display: block;
+        }    
     }
     @media(max-width: 768px) {
         .logo {
@@ -46,7 +63,7 @@ const HeaderStyle = Styled.div`
             position: unset;
             .navbar-collapse {
                 position: absolute;
-                top: 75px;
+                top: 71px;
                 left: 0;
                 right: 0;
                 padding: 20px;
@@ -138,5 +155,6 @@ const FooterStyle = Styled.div`
 
 export {
     HeaderStyle,
-    FooterStyle
+    FooterStyle,
+    
 };

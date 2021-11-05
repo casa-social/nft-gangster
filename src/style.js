@@ -156,18 +156,24 @@ const PurchaseStyle = Styled.div`
         }
     }
     .description {
-        margin-top: 30px;
+        width: 90%;
+        margin: 50px auto 0;
         .title {
             img {
                 width: 45px;
                 margin-right: 20px;
             }
-            font-size: 50px;
             font-weight: bold;
             background-repeat: repeat-y;
             font-family: 'Akira expanded demo', sans-serif;
-            font-size: 4em;
+            font-size: 3em;
         }   
+        h3 {
+            margin-top: 20px;
+            font-family: Montserrat,sans-serif;
+            font-size: 22px;
+            line-height: 1.8;
+        }
     }
     @media(max-width: 991px) {
         padding: 100px 30px;
@@ -175,7 +181,49 @@ const PurchaseStyle = Styled.div`
     }
 `;
 
+const GangstersStyle = Styled.div`
+    section {
+        padding: 100px 5%;
+        .title {
+            img {
+                width: 45px;
+                margin-right: 20px;
+            }
+            font-weight: bold;
+            background-repeat: repeat-y;
+            font-family: 'Akira expanded demo', sans-serif;
+            font-size: 3em;
+        } 
+        .row {
+            margin-top: 30px;
+        }
+    }
+`;
+
+const KilocoinStyle = Styled.div`
+section {
+    padding: 100px 5%;
+    .title {
+        img {
+            width: 45px;
+            margin-right: 20px;
+        }
+        font-weight: bold;
+        background-repeat: repeat-y;
+        font-family: 'Akira expanded demo', sans-serif;
+        font-size: 3em;
+    } 
+    .row {
+        margin-top: 30px;
+        img {
+            margin-top: 100px;
+        }
+    }
+}
+`;
 
 export {
     PurchaseStyle,
+    GangstersStyle,
+    KilocoinStyle,
 };
