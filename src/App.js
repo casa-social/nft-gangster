@@ -100,8 +100,8 @@ const App = () => {
             <div class="hero__gradient is--other"></div>
             <Header/>
             <Switch>
-              <Route exact path="/" component={Dashboard} />
-              <Route path="/home" component={Home} />
+              <Route exact path="/" component={Home} />
+              {/* <Route path="/home" component={Home} /> */}
               {/* <Redirect to="/" component={Dashboard} /> */}
             </Switch>
             <Footer />  
