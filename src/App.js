@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+import './assets/fonts/Akira-Expanded-Demo.otf';
+import './assets/fonts/GRIFTER™Bold.otf';
 
 import Header from './layout/header';
 import Footer from './layout/footer';
@@ -16,6 +18,7 @@ import store from './redux/store';
 import Styled from 'styled-components';
 
 const StyleWrapper = Styled.div`
+  font-family: 'DM Sans', sans-serif;
   .hero__gradient {
     position: fixed;
     left: auto;
@@ -65,10 +68,10 @@ const StyleWrapper = Styled.div`
     width: 100%;
   }
   .default-btn {
-    padding: 10px 20px;
+    padding: 10px 40px;
     margin: 10px auto;
     margin-bottom: 10px;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: #ff3154;
     box-shadow: 1px 1px 4px -1px #000;
     font-family: 'Akira expanded demo', sans-serif;

@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import Purchase from './components/purchase';
 import Gangsters from './components/gangsters';
 import Kilocoin from './components/kilocoin';
+import RoadMap from './components/roadmap';
 
 
 const Dashboard = () => {
@@ -19,6 +20,7 @@ const Dashboard = () => {
       <Purchase />
       <Gangsters />
       <Kilocoin/>
+      <RoadMap />
     </div>
   );
 }

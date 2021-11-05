@@ -150,7 +150,48 @@ const HeaderStyle = Styled.div`
 `;
 
 const FooterStyle = Styled.div`
-    
+    footer {
+        background-size: cover;
+        padding: 70px 0 20px;
+        .row {
+            display: flex;
+            img {
+                margin: 80px auto;
+                width: 80%;
+            }
+            h4 {
+                margin-top: 0px;
+                margin-bottom: 20px;
+                font-size: 22px;
+                line-height: 1.5;
+                text-decoration: underline;  
+                font-family: Grifter, sans-serif;
+                @media(max-width: 991px) {
+                    text-align: center;
+                }
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                @media(max-width: 991px) {
+                    text-align: center;
+                }
+                li {
+                    padding: 10px 0;
+                    a {
+                        font-size: 15px;
+                        cursor: pointer;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 12px;
+        }
+    }
 `;
 
 export {

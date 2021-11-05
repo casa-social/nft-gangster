@@ -65,7 +65,7 @@ const PurchaseStyle = Styled.div`
                 margin-top: 20px;
                 margin-bottom: auto;
                 padding-top: 40px;
-                font-family: 'Akira expanded demo', sans-serif;
+                font-family: 'Akira', sans-serif;
                 font-size: 4.5em;
                 text-transform: uppercase;
                 font-weight: 900;
@@ -146,7 +146,7 @@ const PurchaseStyle = Styled.div`
                     border-radius: 20px;
                     background-color: #ff3154;
                     box-shadow: 1px 1px 4px -1px #000;
-                    font-family: 'Akira expanded demo', sans-serif;
+                    font-family: 'Akira', sans-serif;
                     text-align: center;
                     font-weight: bold;
                     text-transform: uppercase;
@@ -165,7 +165,7 @@ const PurchaseStyle = Styled.div`
             }
             font-weight: bold;
             background-repeat: repeat-y;
-            font-family: 'Akira expanded demo', sans-serif;
+            font-family: 'Akira', sans-serif;
             font-size: 3em;
         }   
         h3 {
@@ -191,11 +191,22 @@ const GangstersStyle = Styled.div`
             }
             font-weight: bold;
             background-repeat: repeat-y;
-            font-family: 'Akira expanded demo', sans-serif;
+            font-family: 'Akira', sans-serif;
             font-size: 3em;
+            @media(max-width: 991px) {
+                font-size: 2.5em;
+            }
         } 
         .row {
             margin-top: 30px;
+            h3 {
+                word-break: break-all;
+            }
+            img {
+                width: 80%;
+                margin: 20px auto;
+                
+            }
         }
     }
 `;
@@ -210,20 +221,42 @@ section {
         }
         font-weight: bold;
         background-repeat: repeat-y;
-        font-family: 'Akira expanded demo', sans-serif;
-        font-size: 3em;
+        font-family: 'Akira', sans-serif;
+        font-size: 2.5em;
     } 
     .row {
         margin-top: 30px;
         img {
             margin-top: 100px;
         }
+        h3 {
+            word-break: break-all;
+        }
     }
 }
 `;
+
+const RoadMapStyle = Styled.div`
+    background-color: #0a0a0a;
+    text-align: center;
+    > h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 150px 0 150px 0;
+        font-family: 'Akira', sans-serif;
+        font-size: 5em;
+        line-height: 1.1;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        @media(max-width: 991px) {
+            font-size: 2.5em;
+        }
+    }
+`
 
 export {
     PurchaseStyle,
     GangstersStyle,
     KilocoinStyle,
+    RoadMapStyle
 };

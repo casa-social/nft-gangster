@@ -17,13 +17,13 @@ const Gangsters = () => {
           Featured gangsters
         </h1>
         <Row>
-          <Col md={4}>
+          <Col md={4} className="text-center">
             <img src={Gangster1} />
           </Col>
-          <Col md={4}>
+          <Col md={4} className="text-center">
             <img src={Gangster2} />
           </Col>
-          <Col md={4}>
+          <Col md={4} className="text-center">
             <img src={Gangster3} />
           </Col>
         </Row>
