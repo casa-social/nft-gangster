@@ -27,6 +27,10 @@ const Introduction = () => {
       toast.warning(`please connect wallet.`);
       return;
     }
+    if (amount === 0) {
+      toast.warning(`please input amount.`);
+      return;
+    }
     const contract = new web3.eth.Contract(
       ContractAbi,
       ContractAddr
@@ -107,6 +111,7 @@ const Introduction = () => {
             <Col md={6} className="right-panel">
               <div>
                 <h3 className="text-white">Mint Your Gangster<img src={KGImage}/></h3>
+                <h3 className="text-white">{userAddress === '' ? 'Please connect your wallet': `Your address is ${userAddress.substr(0, 3) + '...' + userAddress.substr(userAddress.length - 3)}`} </h3>
                 <Row>
                   <Col xs={5} className="text-center left-panel">
                     <img src={MintAvatar}/>
@@ -116,7 +121,7 @@ const Introduction = () => {
                     <h4 className="text-white">Price Per Gangster</h4>
                     <h4 className="text-white">0.08 ETH EACH</h4>
                     <h4 className="text-white">10200 remaining</h4>
-                    <Input type="number" onChange={(e) => setAmount(e.target.value)}/>
+                    <Input type="number" value={amount} onChange={(e) => setAmount(e.target.value)}/>
                   </Col>
                 </Row>
                 <Button className="purchase-btn" onClick={purchase}>Purchase NFT</Button>
