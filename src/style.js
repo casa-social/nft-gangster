@@ -266,6 +266,10 @@ const RoadMapStyle = Styled.div`
             margin: 0;
             font-weight: 900;
             font-size: 3em;
+            @media(max-width: 991px) {
+                font-size: 2.5em;
+                padding: 50px 0 30px 0;
+            }
         }
         p {
             text-align: left;
