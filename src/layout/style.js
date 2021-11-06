@@ -60,6 +60,7 @@ const HeaderStyle = Styled.div`
     @media(max-width: 768px) {
         .logo {
             width: 150px;
+            margin-left: calc(50% - 75px);
         }
         .navbar {
             position: unset;
