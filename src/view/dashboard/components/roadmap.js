@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row } from 'reactstrap';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -9,6 +10,16 @@ const RoadMap = () => {
   return (
     <>
       <RoadMapStyle>
+        <Container className="special">
+          <Row className="text-white">
+          <h2>🍀 What makes them so special? </h2>
+          <p>🔥 Every Gangster has unique DNA which can and will be used for breeding new gangsters.</p>
+          <p>🔥 KG Holders can stake their NFT and earn $kilo as a reward - unlimited money making opportunity right here.</p>
+          <p>🔥 KG Holders will become part or our unique royalty based reward system - owners will get rewards every time their NFT is used for merchandise, part of a cartoon series, as game character and so on! </p>
+          <p>🔥 $Kilo currency is also part of our ecosystem. Now on presale!</p>
+          <p>🔥 Backed and joined by rappers and stars all over the world - LilXan, Lacrim, Rasskulz, AliB, DonMalikMontana, JackthePlug and many more. You will be joining a winning team!</p>
+          </Row>
+        </Container>
         <div id="roadmap">
           <h1 className="text-white">ROADMAP</h1>
           <VerticalTimeline lineColor="white">

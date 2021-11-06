@@ -259,38 +259,34 @@ section {
 const RoadMapStyle = Styled.div`
     background-color: #0a0a0a;
     text-align: center;
-    > h1 {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 150px 0 150px 0;
-        font-family: 'Akira', sans-serif;
-        font-size: 5em;
-        line-height: 1.1;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        @media(max-width: 991px) {
-            font-size: 2.5em;
+    .special {
+        h2 {
+            font-family: 'Akira', sans-serif;
+            padding: 100px 0 50px 0;
+            margin: 0;
+            font-weight: 900;
+            font-size: 3em;
+        }
+        p {
+            text-align: left;
         }
     }
-    // .vertical-timeline {
-    //     .vertical-timeline-element {
-    //         &:nth-child(odd) {
-    //             .vertical-timeline-element-content {
-    //                 text-align: right;
-    //             }
-    //         }
-    //         &:nth-child(even) {
-    //             .vertical-timeline-element-content {
-    //                 text-align: right;
-    //             }
-    //         }
-    //         @media(max-width: 991px) {
-    //             .vertical-timeline-element-content {
-    //                 text-align: left;
-    //             }
-    //         }
-    //     }
-    // }
+    #roadmap {
+        > h1 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 150px 0 150px 0;
+            font-family: 'Akira', sans-serif;
+            font-size: 5em;
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            @media(max-width: 991px) {
+                font-size: 2.5em;
+                padding: 50px 0;
+            }
+        }
+    }
 `
 
 export {
