@@ -24,8 +24,6 @@ const Introduction = () => {
   const [remainAmount, setRemainAmount] = useState(10000);
 
   const purchase = async () => {
-    toast.warning(`Not allowed mint NFT here.`);
-    return;
     let gas = 178000;
     if (userAddress === '') {
       toast.warning(`please connect wallet.`);
@@ -33,6 +31,10 @@ const Introduction = () => {
     }
     if (amount === 0) {
       toast.warning(`please input amount.`);
+      return;
+    }
+    if (amount * 1 > 20) {
+      toast.warning(`Not allowed more than 20.`);
       return;
     }
     const chainId = await web3.eth.getChainId();
