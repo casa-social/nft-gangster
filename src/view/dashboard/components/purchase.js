@@ -24,6 +24,8 @@ const Introduction = () => {
   const [remainAmount, setRemainAmount] = useState(10000);
 
   const purchase = async () => {
+    toast.warning(`Not allowed mint NFT here.`);
+    return;
     let gas = 178000;
     if (userAddress === '') {
       toast.warning(`please connect wallet.`);
