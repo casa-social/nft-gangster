@@ -11,8 +11,8 @@ import { CHAIN_ID } from '../../../constants/constants';
 import { PurchaseStyle } from '../../../style';
 import BlackBrike from '../../../assets/images/black-brike.jpg';
 import RedLogo from '../../../assets/images/logo-red.png';
-import KGImage from '../../../assets/images/KG2.png';
-import MintAvatar from '../../../assets/images/mint-avatar.png';
+import KGImage from '../../../assets/images/KG.svg';
+import MintAvatar from '../../../assets/images/KG2.png';
 import Revolver from '../../../assets/images/Revolver.png';
 import Mask from '../../../assets/images/mask.png';
 
@@ -140,7 +140,7 @@ const Introduction = () => {
             </Col>
             <Col md={6} className="right-panel">
               <div>
-                <h3 className="text-white">Mint Your Gangster<span className="KG-symbol"><img src={KGImage}/></span></h3>
+                <h3 className="text-white">Mint Your Gangster<img src={KGImage}/></h3>
                 <h3 className="text-white">{userAddress === '' ? 'Please connect your wallet': `Your address is ${userAddress.substr(0, 3) + '...' + userAddress.substr(userAddress.length - 3)}`} </h3>
                 <Row>
                   <Col xs={5} className="text-center left-panel">

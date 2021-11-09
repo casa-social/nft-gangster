@@ -106,7 +106,7 @@ const PurchaseStyle = Styled.div`
                     @media(max-width: 991px) {
                         font-size: 19px;
                     }
-                    .KG-symbol {
+                    img {
                         width: 50px;
                         padding: 20px 0;
                         background-color:#dd2b37;
@@ -114,9 +114,6 @@ const PurchaseStyle = Styled.div`
                         border-bottom-left-radius: 20px; 
                         @media(max-width: 991px) {
                             width: 40px;
-                        }
-                        img {
-                            width: 70%;
                         }
                     }
                 }
