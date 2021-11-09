@@ -106,14 +106,17 @@ const PurchaseStyle = Styled.div`
                     @media(max-width: 991px) {
                         font-size: 19px;
                     }
-                    img {
+                    .KG-symbol {
                         width: 50px;
                         padding: 20px 0;
-                        background-color:#ff3154;
+                        background-color:#dd2b37;
                         border-bottom-right-radius: 20px; 
                         border-bottom-left-radius: 20px; 
                         @media(max-width: 991px) {
                             width: 40px;
+                        }
+                        img {
+                            width: 70%;
                         }
                     }
                 }
@@ -152,7 +155,7 @@ const PurchaseStyle = Styled.div`
                     margin: 10px auto;
                     margin-bottom: 10px;
                     border-radius: 20px;
-                    background-color: #ff3154;
+                    background-color: #dd2b37;
                     box-shadow: 1px 1px 4px -1px #000;
                     font-family: 'Akira', sans-serif;
                     text-align: center;

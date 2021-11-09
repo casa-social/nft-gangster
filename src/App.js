@@ -59,7 +59,7 @@ const StyleWrapper = Styled.div`
     pointer-events: none;
   }
   .text-red {
-    color: #ff3154;
+    color: #dd2b37;
   }
   .text-right {
     text-align: right;
@@ -72,7 +72,7 @@ const StyleWrapper = Styled.div`
     margin: 10px auto;
     margin-bottom: 10px;
     border-radius: 40px;
-    background-color: #ff3154;
+    background-color: #dd2b37;
     box-shadow: 1px 1px 4px -1px #000;
     font-family: 'Akira expanded demo', sans-serif;
     text-align: center;
