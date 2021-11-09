@@ -25,7 +25,7 @@ const RoadMap = () => {
           <VerticalTimeline lineColor="white">
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: 'transparent', color: '#fff' }}
+              contentStyle={{ background: 'transparent', color: '#16a00f' }}
               contentArrowStyle={{ borderRight: '7px solid  transparent' }}
               icon={<img src={KGImage} style={{ width: '50px' }} />}
               iconStyle={{ background: '#0a0a0a', color: '#fff' }}
@@ -40,7 +40,7 @@ const RoadMap = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: 'transparent', color: '#fff'}}
+              contentStyle={{ background: 'transparent', color: '#16a00f'}}
               contentArrowStyle={{ borderRight: '7px solid  transparent' }}
               icon={<img src={KGImage} style={{ width: '50px' }} />}
               iconStyle={{ background: '#0a0a0a', color: '#fff' }}
@@ -55,7 +55,7 @@ const RoadMap = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: 'transparent', color: '#fff'}}
+              contentStyle={{ background: 'transparent', color: '#16a00f'}}
               contentArrowStyle={{ borderRight: '7px solid  transparent' }}
               icon={<img src={KGImage} style={{ width: '50px' }} />}
               iconStyle={{ background: '#0a0a0a', color: '#fff' }}
@@ -73,7 +73,7 @@ const RoadMap = () => {
               contentStyle={{ background: 'transparent', color: '#fff'}}
               contentArrowStyle={{ borderRight: '7px solid  transparent' }}
               icon={<img src={KGImage} style={{ width: '50px' }} />}
-              iconStyle={{ background: '#0a0a0a', color: '#fff' }}
+              iconStyle={{ background: '#0a0a0a', color: 'red' }}
             >
               <h1 className="vertical-timeline-element-title" style={{ fontFamily: 'Akira' }}>Phase 4</h1>
               <p style={{ fontSize: 22 }}>

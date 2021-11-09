@@ -130,6 +130,7 @@ const Introduction = () => {
               </ul>
             </Col>
           </Row>
+          
           <Row className="purchase">
             <Col md={6} className="left-panel">
               <h1 className="text-white">
@@ -153,6 +154,10 @@ const Introduction = () => {
                     <Input type="number" value={amount} onChange={(e) => setAmount(e.target.value)}/>
                   </Col>
                 </Row>
+                <p className="text-white">
+                  Whitelist sale ends November 14th<br/>
+                  Public sale will start november 19th
+                </p>
                 <Button className="purchase-btn" onClick={purchase}>Purchase NFT</Button>
               </div>
             </Col>
