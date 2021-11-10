@@ -45,7 +45,7 @@ const PurchaseStyle = Styled.div`
                     width: 100%;
                 }
                 li {
-                    margin: 35px 0;
+                    margin: 25px 0;
                     a {
                         display: flex;
                         justify-content: space-between;
@@ -57,6 +57,12 @@ const PurchaseStyle = Styled.div`
                             font-size: 40px;
                         }
                         text-decoration: none;
+                        img {
+                            width: 40px;
+                            border-radius: 50%;
+                            padding: 5px 5px;
+                            background-color: white;
+                        }
                     }
                 }
             }

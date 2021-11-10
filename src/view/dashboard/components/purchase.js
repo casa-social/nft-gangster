@@ -12,6 +12,7 @@ import { PurchaseStyle } from '../../../style';
 import BlackBrike from '../../../assets/images/black-brike.jpg';
 import RedLogo from '../../../assets/images/logo-red.png';
 import KGImage from '../../../assets/images/KG.svg';
+import OpenseaIcon from '../../../assets/images/opensea-icon.png';
 import MintAvatar from '../../../assets/images/KG2.png';
 import Revolver from '../../../assets/images/Revolver.png';
 import Mask from '../../../assets/images/mask.png';
@@ -125,6 +126,12 @@ const Introduction = () => {
                   <a href="https://t.me/KryptoGangsters" target="_blink">
                     <span className="text-red">Telegram</span>
                     <FaTelegram icon={faWallet} className="text-white"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://opensea.io/collection/krypto-gangsters" target="_blink">
+                    <span className="text-red">Opensea</span>
+                    <img src={OpenseaIcon} className="opensea-icon"/>
                   </a>
                 </li>
               </ul>
