@@ -13,7 +13,7 @@ const Kilocoin = () => {
         <section style={{ backgroundImage: `linear-gradient(180deg, rgba(9, 18, 44, 0.89), rgba(9, 18, 44, 0.89)), url(${BlackBrike})` }} id="kilocoin">
           <h1 className="title text-white">
             <img src={SMG} />
-            KILO COIN
+            Kryptogangsters is more than a NFT.
           </h1>
           <Row>
             <Col md={5} className="text-center">
@@ -21,13 +21,18 @@ const Kilocoin = () => {
             </Col>
             <Col md={7}>
               <h3 className="text-white">
-              As we see Kryptogangsters as the start of something much bigger than a regular NFT mint it speaks for itself that we combine it with a crypto currency. In this case we have chosen to launch the KryptoGangsters ecosystem with our ERC20 built Kilo token. Every holder of our NFTs will receive a 5k $Kilo airdrop.
+              It is an ecosystem.<br/><br/>
+
+              KryptoGangsters ecosystem includes $KILO coin, an ERC20 token. <br/><br/>
+
+              Every holder of Kryptogangsters NFT will receive a 5k $Kilo on airdrop.<br/><br/>
+
               </h3><br/><br/>
               <h3 className="text-white">
               $Kilo will be used for voting, payouts & ecosystem in general.
               </h3><br/><br/>
               <h3 className="text-white"><span className="text-red">Name: </span>Kilo</h3>
-              <h3 className="text-white"><span className="text-red">Symbol: </span>KG</h3>
+              <h3 className="text-white"><span className="text-red">Symbol: </span>$Kilo</h3>
               <h3 className="text-white"><span className="text-red">Decimals: </span>3</h3>
               <h3 className="text-white"><span className="text-red">Address: </span></h3><br/><br/>
               <h3 className="text-white"><span className="text-red">Tax: </span>10% total</h3>

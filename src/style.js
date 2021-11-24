@@ -20,7 +20,7 @@ const PurchaseStyle = Styled.div`
                 font-weight: bold;
                 @media(max-width: 768px) {
                     text-align: center;
-                    font-size: 5em
+                    font-size: 3.5em
                 }
             }
             h2 {
@@ -30,7 +30,7 @@ const PurchaseStyle = Styled.div`
                 font-weight: bold;
                 @media(max-width: 768px) {
                     text-align: center;
-                    font-size: 2em
+                    font-size: 1em
                 }
             }
         }
@@ -76,6 +76,9 @@ const PurchaseStyle = Styled.div`
                 font-family: Akira;
                 font-size: 1.5em;
                 margin-bottom: 20px;
+                @media(max-width: 768px) {
+                    font-size: 1.1em;
+                }
             }
         }
     }
@@ -217,7 +220,7 @@ const GangstersStyle = Styled.div`
             font-family: 'Akira', sans-serif;
             font-size: 3em;
             @media(max-width: 991px) {
-                font-size: 1.5em;
+                font-size: 1.3em;
                 text-align: center;
             }
         } 
@@ -248,7 +251,7 @@ section {
         font-family: 'Akira', sans-serif;
         font-size: 2.5em;
         @media(max-width: 768px) {
-            font-size: 2em;
+            font-size: 1.3em;
             text-align: center;
         }
     } 
@@ -257,6 +260,9 @@ section {
         img {
             margin-top: 100px;
             width: 80%;
+            @media(max-width: 768px) {
+                margin-top: 30px;
+            }
         }
         h3 {
             word-break: break-all;
@@ -282,7 +288,7 @@ const RoadMapStyle = Styled.div`
             font-weight: 900;
             font-size: 3em;
             @media(max-width: 991px) {
-                font-size: 2.5em;
+                font-size: 1.3em;
                 padding: 50px 0 30px 0;
             }
         }
