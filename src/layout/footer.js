@@ -30,7 +30,9 @@ const Footer = () => {
                 <li>
                   <a href="https://twitter.com/kryptogangsters" target="_blink">Twitter</a>
                 </li>
-               
+                <li>
+                  <a href="https://opensea.io/collection/krypto-gangsters" target="_blink">Opensea</a>
+                </li>
               </ul>
             </Col>
             <Col md={4} className="text-white">

@@ -36,8 +36,8 @@ const RoadMap = () => {
             >
               <h1 className="vertical-timeline-element-title" style={{ fontFamily: 'Akira' }}>Phase 1</h1>
               <p style={{ fontSize: 22 }}>
-                Waste management business
-                -Design first batch of Kryptogangster NFTs
+                Waste management business<br/>
+                -Design first batch of Kryptogangster NFTs<br/>
                 -Start of our social media channels
                 (IG, TG, FB, Twitter, Discord)
               </p>
@@ -51,10 +51,10 @@ const RoadMap = () => {
             >
               <h1 className="vertical-timeline-element-title" style={{ fontFamily: 'Akira' }}>Phase 2</h1>
               <p style={{ fontSize: 22 }}>
-              Shakedown
-              - Start Kilo Private Pre-Sale
-              - Start Kryptogangsters NFT Sale
-              - Bribe Law enforcement
+              Shakedown<br/>
+              - Start Kilo Private Pre-Sale<br/>
+              - Start Kryptogangsters NFT Sale<br/>
+              - Bribe Law enforcement<br/>
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -66,10 +66,10 @@ const RoadMap = () => {
             >
               <h1 className="vertical-timeline-element-title" style={{ fontFamily: 'Akira' }}>Phase 3</h1>
               <p style={{ fontSize: 22 }}>
-              Initiation
-            - Finalise website
-            - Finish White Paper
-            - Finalise 10k Limited Edition Kryptogangsters
+              Initiation<br/>
+            - Finalise website<br/>
+            - Finish White Paper<br/>
+            - Finalise 10k Limited Edition Kryptogangsters<br/>
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -81,9 +81,9 @@ const RoadMap = () => {
             >
               <h1 className="vertical-timeline-element-title" style={{ fontFamily: 'Akira' }}>Phase 4</h1>
               <p style={{ fontSize: 22 }}>
-              Cosa Nostra
-              - Mint 10k Limited Edition
-              - Announce further plans
+              Cosa Nostra<br/>
+              - Mint 10k Limited Edition<br/>
+              - Announce further plans<br/>
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -95,9 +95,9 @@ const RoadMap = () => {
             >
               <h1 className="vertical-timeline-element-title" style={{ fontFamily: 'Akira' }}>Phase 5</h1>
               <p style={{ fontSize: 22 }}>
-              Build Empire
-              - Launch Kilo on CEX
-              - Start developing Stablecoin
+              Build Empire<br/>
+              - Launch Kilo on CEX<br/>
+              - Start developing Stablecoin<br/>
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -109,9 +109,9 @@ const RoadMap = () => {
             >
               <h1 className="vertical-timeline-element-title" style={{ fontFamily: 'Akira' }}>Phase 6</h1>
               <p style={{ fontSize: 22 }}>
-              Take Over
-              - Roll out next set of Limited NFT Batch
-              - Set up Crypto Ecosystem
+              Take Over<br/>
+              - Roll out next set of Limited NFT Batch<br/>
+              - Set up Crypto Ecosystem<br/>
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -123,8 +123,8 @@ const RoadMap = () => {
             >
               <h1 className="vertical-timeline-element-title" style={{ fontFamily: 'Akira' }}>Phase 7</h1>
               <p style={{ fontSize: 22 }}>
-              Plead Innocent
-            - Finalise NFT Gamification Development
+              Plead Innocent<br/>
+            - Finalise NFT Gamification Development<br/>
               </p>
             </VerticalTimelineElement>
           </VerticalTimeline>
