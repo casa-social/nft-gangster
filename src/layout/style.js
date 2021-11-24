@@ -119,10 +119,10 @@ const HeaderStyle = Styled.div`
                 margin-left: 100px;
             }
             h1 {
-                font-family: Grifter, sans-serif;
+                font-family: Akira, sans-serif;
                 text-align: left;
                 text-shadow: 1px 1px 6px #000;
-                font-size: 6em;
+                font-size: 4em;
                 line-height: 0.9375;
                 font-weight: 700;
                 letter-spacing: 0.04em;
@@ -172,7 +172,7 @@ const FooterStyle = Styled.div`
                 font-size: 22px;
                 line-height: 1.5;
                 text-decoration: underline;  
-                font-family: Grifter, sans-serif;
+                font-family: Akira, sans-serif;
                 @media(max-width: 991px) {
                     text-align: center;
                 }

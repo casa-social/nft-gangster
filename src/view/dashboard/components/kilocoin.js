@@ -21,13 +21,20 @@ const Kilocoin = () => {
             </Col>
             <Col md={7}>
               <h3 className="text-white">
-              As we see Kryptogangsters as the start of something much bigger than a regular NFT drop it speaks for itself that we combine it with a crypto currency. In this case we have chosen to launch the KryptoGangsters ecosystem with our Binance smartchain built Kilo token.
+              As we see Kryptogangsters as the start of something much bigger than a regular NFT mint it speaks for itself that we combine it with a crypto currency. In this case we have chosen to launch the KryptoGangsters ecosystem with our ERC20 built Kilo token. Every holder of our NFTs will receive a 5k $Kilo airdrop.
+              </h3><br/><br/>
+              <h3 className="text-white">
+              $Kilo will be used for voting, payouts & ecosystem in general.
               </h3><br/><br/>
               <h3 className="text-white"><span className="text-red">Name: </span>Kilo</h3>
               <h3 className="text-white"><span className="text-red">Symbol: </span>KG</h3>
               <h3 className="text-white"><span className="text-red">Decimals: </span>3</h3>
-              <h3 className="text-white"><span className="text-red">Address: </span>0xA4FA1185C12ef7AF0221D91494d36abBaeFb3262</h3><br/><br/>
-              <h3 className="text-white">Smart chain BEP20 Token</h3>
+              <h3 className="text-white"><span className="text-red">Address: </span></h3><br/><br/>
+              <h3 className="text-white"><span className="text-red">Tax: </span>10% total</h3>
+              <h3 className="text-white">4% Holder Reward</h3>
+              <h3 className="text-white">2% Burn</h3>
+              <h3 className="text-white">2% Charity</h3>
+              <h3 className="text-white">2% Marketing</h3>
               <h3 className="text-white">Total Supply <span className="text-red">250,000,000 pre-minted</span></h3>
               <div className="text-center">
                 <a className="default-btn" href="https://t.me/KryptoGangsters" target="_blink">

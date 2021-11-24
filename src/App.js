@@ -18,7 +18,7 @@ import store from './redux/store';
 import Styled from 'styled-components';
 
 const StyleWrapper = Styled.div`
-  font-family: 'DM Sans', sans-serif;
+  font-family: Montserrat, sans-serif;
   .hero__gradient {
     position: fixed;
     left: auto;
@@ -74,7 +74,7 @@ const StyleWrapper = Styled.div`
     border-radius: 40px;
     background-color: #dd2b37;
     box-shadow: 1px 1px 4px -1px #000;
-    font-family: 'Akira expanded demo', sans-serif;
+    font-family: 'Akira', sans-serif;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;

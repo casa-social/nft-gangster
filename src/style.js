@@ -3,6 +3,7 @@ import Styled from 'styled-components';
 const PurchaseStyle = Styled.div`
     padding-top: 100px;
     font-family: Montserrat, sans-serif;
+    padding-bottom: 50px;
     .image {
         .left-panel {
             img {
@@ -12,8 +13,9 @@ const PurchaseStyle = Styled.div`
         .right-panel {
             padding-top: 40px;
             h1 {
+                font-family: Akira;
                 color: #dd2b37;
-                font-size: 7em;
+                font-size: 6em;
                 line-height: 1;
                 font-weight: bold;
                 @media(max-width: 768px) {
@@ -22,8 +24,9 @@ const PurchaseStyle = Styled.div`
                 }
             }
             h2 {
+                font-family: Akira;
                 color: #dd2b37;
-                font-size: 3em;  
+                font-size: 2.5em;  
                 font-weight: bold;
                 @media(max-width: 768px) {
                     text-align: center;
@@ -69,6 +72,11 @@ const PurchaseStyle = Styled.div`
         }
         .right-panel {
             margin-top: 35px;
+            h3 {
+                font-family: Akira;
+                font-size: 1.5em;
+                margin-bottom: 20px;
+            }
         }
     }
     .purchase {
@@ -106,7 +114,7 @@ const PurchaseStyle = Styled.div`
                     display: flex;
                     align-items: center;
                     font-size: 22px;
-                    font-family: Grifter, sans-serif;
+                    font-family: Akira, sans-serif;
                     font-weight: bold;
                     justify-content: center;
                     @media(max-width: 991px) {
@@ -131,10 +139,11 @@ const PurchaseStyle = Styled.div`
                         }
                     }
                     h4 {
-                        font-size: 19px;
+                        font-size: 16px;
                         margin-top: 20px;
                         font-weight: bold;
                         text-transform: uppercase;
+                        font-family: Akira;
                     }
                 }
                 .right-panel {

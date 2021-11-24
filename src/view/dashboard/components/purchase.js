@@ -95,11 +95,11 @@ const Introduction = () => {
             <Col md={6} className="right-panel">
               <h3 className="text-red">100% UNIQUE</h3>
               <p className="text-white">
-                All 10,000 Krypto Gangsters are Unique. There is no one like another. Each Gangster is randomly generated with it's own characteristics, expression and extra's.
+              All 10,000 Krypto Gangsters are Unique. There is no one like another. Each Gangster is randomly generated with it's own characteristics, expressions and attributes.
               </p>
               <h3 className="text-red">KRYPTOGANGSTERS SECRET</h3>
               <p className="text-white">
-                One set are "cryptonised" versions of real world and fictional characters that in one way or another are known to be "gangsters". Every NFT will be unique and only one per NFT will available. The characters are designed by our team and all have unique attributes attached to them.
+              The KG collection is a ‘cryptonized”  artistic representation of real world and fictional characters that are known gangsters. Each NFT  has unique attributes designed by our artists.
               </p>
             </Col>
             <Col md={6} className="left-panel">
@@ -170,7 +170,7 @@ const Introduction = () => {
             </Col>
           </Row>
         </Container>
-        <Row className="description"id="nft">
+        {/* <Row className="description"id="nft">
           <h1 className="title text-white"><img src={Revolver} />NFT</h1>
           <Col md={8}>
             <h3 className="text-white">
@@ -182,7 +182,7 @@ const Introduction = () => {
           <Col md={4}>
             <img src={Mask} />
           </Col>
-        </Row>
+        </Row> */}
       </PurchaseStyle>
     </section>
   </>      
