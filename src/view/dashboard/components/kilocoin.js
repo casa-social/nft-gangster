@@ -33,7 +33,7 @@ const Kilocoin = () => {
               </h3><br/><br/>
               <h3 className="text-white"><span className="text-red">Name: </span>Kilo</h3>
               <h3 className="text-white"><span className="text-red">Symbol: </span>$Kilo</h3>
-              <h3 className="text-white"><span className="text-red">Decimals: </span>3</h3>
+              <h3 className="text-white"><span className="text-red">Decimals: </span>9</h3>
               <h3 className="text-white"><span className="text-red">Address: </span>0xaEF396c1FF27b1D5313A8ca02948E83f5f7A9fa0</h3><br/><br/>
               <h3 className="text-white"><span className="text-red">Tax: </span>10% total</h3>
               <h3 className="text-white">4% Holder Reward</h3>

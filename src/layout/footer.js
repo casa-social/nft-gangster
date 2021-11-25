@@ -50,13 +50,10 @@ const Footer = () => {
               <h4>Kilo Coin</h4>
               <ul>
                 <li>
-                  <a href="http://assuredefi.io/projects/kryptogangsters">KYC NFT:</a>
+                  <a href="http://assuredefi.io/projects/kryptogangsters" target="_blink">KYC NFT:</a>
                 </li>
                 <li>
-                  <a href="http://discord.gg/ndzv7xRWTv">Discord</a>
-                </li>
-                <li>
-                  <a href="https://www.kryptogangsters.io">Website</a>
+                  <a href="https://www.kryptogangsters.io" target="_blink">Website</a>
                 </li>
               </ul>
             </Col>
