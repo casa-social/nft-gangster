@@ -12,10 +12,10 @@ const Footer = () => {
       <footer style={{ backgroundImage: `linear-gradient(180deg, rgba(255, 42, 42, 0.79), rgba(255, 42, 42, 0.79)), url(${Banner2})` }}> 
         <Container>
           <Row>
-            <Col md={4} className="text-center">
+            <Col md={3} className="text-center">
               <img src={LogoImage} />
             </Col>
-            <Col md={4} className="text-white">
+            <Col md={3} className="text-white">
               <h4>Quick links</h4>
               <ul>
                 <li>
@@ -35,7 +35,7 @@ const Footer = () => {
                 </li>
               </ul>
             </Col>
-            <Col md={4} className="text-white">
+            <Col md={3} className="text-white">
               <h4>Jump to</h4>
               <ul>
                 <li>
@@ -44,8 +44,19 @@ const Footer = () => {
                 <li>
                   <a href="#kilocoin">Kilo Coin</a>
                 </li>
+              </ul>
+            </Col>
+            <Col md={3} className="text-white">
+              <h4>Kilo Coin</h4>
+              <ul>
                 <li>
-                  <a href="#roadmap">Roadmap</a>
+                  <a href="http://assuredefi.io/projects/kryptogangsters">KYC NFT:</a>
+                </li>
+                <li>
+                  <a href="http://discord.gg/ndzv7xRWTv">Discord</a>
+                </li>
+                <li>
+                  <a href="https://www.kryptogangsters.io">Website</a>
                 </li>
               </ul>
             </Col>
