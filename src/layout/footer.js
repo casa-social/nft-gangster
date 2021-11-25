@@ -53,6 +53,9 @@ const Footer = () => {
                   <a href="http://assuredefi.io/projects/kryptogangsters" target="_blink">KYC NFT:</a>
                 </li>
                 <li>
+                  <a href="https://discord.com/invite/kryptogangsters" target="_blink">Discord</a>
+                </li>
+                <li>
                   <a href="https://www.kryptogangsters.io" target="_blink">Website</a>
                 </li>
               </ul>
