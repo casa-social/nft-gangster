@@ -161,9 +161,6 @@ const Introduction = () => {
                     <Input type="number" value={amount} onChange={(e) => setAmount(e.target.value)}/>
                   </Col>
                 </Row>
-                <p className="text-white">
-                  Public minting starts on 25th
-                </p>
                 <Button className="purchase-btn" onClick={purchase}>Purchase NFT</Button>
               </div>
             </Col>
