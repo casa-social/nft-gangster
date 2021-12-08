@@ -157,7 +157,7 @@ const Introduction = () => {
                   <Col xs={7} className="text-right right-panel">
                     <h4 className="text-white">Price Per Gangster</h4>
                     <h4 className="text-white">0.08 ETH EACH</h4>
-                    <h4 className="text-white">{remainAmount} remaining</h4>
+                    <h4 className="text-white" style={{ fontSize: 13 }}>{userAddress !== '' ? `${remainAmount} remaining` : `You should connect wallet for seeing the remaining amount`}</h4>
                     <Input type="number" value={amount} onChange={(e) => setAmount(e.target.value)}/>
                   </Col>
                 </Row>
