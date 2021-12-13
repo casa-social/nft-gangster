@@ -40,8 +40,7 @@ const RoadMap = () => {
               <p style={{ fontSize: 22 }}>
                 Waste management business<br/>
                 -Design first batch of Kryptogangster NFTs<br/>
-                -Start of our social media channels
-                (IG, TG, FB, Twitter, Discord)
+                -Start of our social media channels (IG, TG, FB, Twitter, Discord)<br/>
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -85,7 +84,12 @@ const RoadMap = () => {
               <p style={{ fontSize: 22 }}>
               Cosa Nostra<br/>
               - Mint 10k Limited Edition<br/>
+              - Open our first online casino<br/>
+              - 5k $Kilo airdrop per NFT<br/>
+              - Exclusive deals with our partners (IPTV)<br/>
+              - Announce exclusive partnerships<br/>
               - Announce further plans<br/>
+              - Roll out heavy influencer marketing, host AMAs etc<br/>
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -99,7 +103,9 @@ const RoadMap = () => {
               <p style={{ fontSize: 22 }}>
               Build Empire<br/>
               - Launch Kilo on CEX<br/>
-              - Start developing Stablecoin<br/>
+              - Open the "Stash House"; our KG DAO<br/>
+              - Open Breeding of our gangsters to create supergangsters<br/>
+              - Open more online casinos to create more demand for $Kilo<br/>
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -113,6 +119,8 @@ const RoadMap = () => {
               <p style={{ fontSize: 22 }}>
               Take Over<br/>
               - Roll out next set of Limited NFT Batch<br/>
+              - Roll out the Royalty based reward system - Your gangster will earn you rewards on merchandise, apparel, valuables etc<br/>
+              - Open Staking for our NFTs and $Kilo<br/>
               - Set up Crypto Ecosystem<br/>
               </p>
             </VerticalTimelineElement>
