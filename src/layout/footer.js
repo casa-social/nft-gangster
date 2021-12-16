@@ -33,6 +33,9 @@ const Footer = () => {
                 <li>
                   <a href="https://opensea.io/collection/krypto-gangsters" target="_blink">Opensea</a>
                 </li>
+                <li>
+                  <a href="https://www.assuredefi.io/projects/kryptogangsters" target="_blink">AssureDefi</a>
+                </li>
               </ul>
             </Col>
             <Col md={3} className="text-white">
