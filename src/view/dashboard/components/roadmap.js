@@ -21,8 +21,6 @@ const RoadMap = () => {
 
           <p>🔥 $Kilo currency is  part of our ecosystem. Now on presale!</p>
 
-          <p>🔥 Backed and joined by rappers and stars all over the world - LilXan, Lacrim, Rasskulz, AliB, DonMalikMontana, JackthePlug already in the kryptogangsters familia.</p>
-
           <p>🔥 @kryptogangsters KYC w/ @AssureDefi is APPROVED <br/>KG is committed to the safety & security of their investors & believe this to be a hugely  positive step for the community.</p>
           </Row>
         </Container>
